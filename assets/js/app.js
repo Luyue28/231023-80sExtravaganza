@@ -8,8 +8,8 @@ window.addEventListener('load', init);
  * Run this function when the page is fully loaded.
  */
 function init(){
+  sortByTitle();
   for(let i = 0; i < database.videos.length; i++){
-    sortByTitle();
     displayVideoList(database.videos, i);
   }
   document.getElementById('airtime').innerHTML = calculateListTotalTime();
